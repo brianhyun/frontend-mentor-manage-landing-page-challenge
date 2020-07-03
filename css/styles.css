@@ -1,0 +1,316 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-family: "Be Vietnam", sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+  position: relative;
+    /* to set position of faded-orange pill shape in splash section */
+}
+
+p {
+  font-size: 16px;
+  margin: 0;
+}
+
+/* Site Wide Styles */
+.gray-text {
+  color: hsl(0, 0%, 98%);
+}
+
+/* Navbar Section */
+#navbar {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 3.5% 10%;
+  width: 100%;
+}
+
+.navbar-links {
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.navbar-links a {
+  color: #000;
+    /* change color */
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  padding-right: 15%;
+}
+
+.navbar-links .about-us {
+  white-space: nowrap;
+}
+
+.navbar-links .community {
+  padding-right: 0;
+}
+
+.get-started-btn {
+  align-items: center;
+  background-color: hsl(12, 88%, 59%);
+  border-radius: 50px;
+  box-shadow: 0 15px 15px -6px hsla(12, 88%, 59%, 0.4);
+  color: #fff;
+  display: inline-flex;
+  font-weight: 500;
+  justify-content: center;
+  padding: 13px 35px 16px 35px;
+}
+
+.get-started-btn p {
+  font-size: 13px;
+}
+
+.get-started-btn:hover {
+  cursor: pointer;
+}
+
+/* Splash Section */
+#splash {
+  align-items: center;
+  display: flex;
+  padding: 3% 10%;
+  width: 100%;
+}
+
+.splash-left, .splash-right {
+  width: 50%;
+}
+
+.splash-section-background-pill {
+  position: absolute;
+    top: -7%;
+    right: -11%;
+  z-index: -1;
+}
+
+.splash-left .header {
+  font-size: 2.8rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 5%;
+}
+
+.splash-left .description {
+  padding-right: 40%;
+  line-height: 1.8;
+  margin-bottom: 7%;
+}
+
+.splash-right img {
+  width: 100%;
+}
+
+/********************************* Competitive Advantage Section *********************************/
+#competitive-advantage {
+  display: flex;
+  padding: 2% 10%;
+  width: 100%;
+}
+
+.competitive-advantage-left, .competitive-advantage-right {
+  width: 50%;
+}
+
+/* Competitive Advantage Left */
+.competitive-advantage-left {
+  padding-right: 5%;
+}
+
+.competitive-advantage-left .header {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 5%;
+}
+
+/* Competitive Advantage Right */
+.advantages {
+  display: flex;
+  margin-bottom: 8%;
+}
+
+.advantages .number-container {
+  margin-right: 5%;
+}
+
+.advantages .number-container .number-bubble {
+  align-items: center;
+  background-color: hsl(12, 88%, 59%);
+  border-radius: 50px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  height: 35px;
+  width: 60px;
+}
+
+.advantages .content .header {
+  font-weight: 700;
+  margin-bottom: 3%;
+}
+
+/* Testimonial Section */
+#testimonial {
+  display: flex;
+  flex-direction: column;
+  margin: 15% 0;
+  /* set margins between the different sections */
+}
+
+#testimonial .header {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+}
+
+.testimonials-container {
+  display: flex;
+  overflow: visible;
+  margin: 6.5% 0 5%;
+}
+
+.test {
+  background-color: hsl(0, 0%, 98%);
+  text-align: center;
+  margin: 0 1%;
+  padding: 1%;
+  position: relative;
+}
+
+.test .name {
+  margin: 5% 0;
+}
+
+.test .avatar-image {
+  position: absolute;
+  right: calc(50% - 25px);
+  top: -25px;
+  width: 50px;
+}
+
+#testimonial .get-started-btn {
+  margin: auto 0;
+}
+
+/* Call to Action Section */
+#call-to-action {
+  align-items: center;
+  background-color: hsl(12, 88%, 59%);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 4% 10%;
+  overflow: hidden;
+  position: relative;
+    /* to position of pill shapes */
+  width: 100%;
+}
+
+#call-to-action .header {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.2;
+  width: 50%;
+}
+
+#call-to-action .get-started-btn {
+  background-color: #fff;
+  color: hsl(12, 88%, 59%);
+  box-shadow: 0 15px 10px -6px rgba(0, 0, 0, 0.1);
+}
+
+#call-to-action p, #call-to-action div {
+  z-index: 1;
+}
+
+.pill-shape1 {
+  position: absolute;
+    top: -150px;
+    right: -275px;
+  z-index: 1;
+}
+
+/* Footer Section */
+#footer {
+  background-color: hsl(231, 11%, 11%);
+  display: flex;
+  justify-content: space-between;
+  padding: 4% 10%;
+  width: 100%;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 130px;
+}
+
+.col-1 .logo {
+  margin-bottom: 30%;
+}
+
+.col-1 .social-media-icons {
+  width: 162px;
+}
+
+.col-2 p, .col-3 p {
+  color: #fff;
+}
+
+.col-3 .blank {
+  visibility: hidden;
+}
+
+.col-4 {
+  align-items: flex-end;
+}
+
+.col-4 button, .col-4 input {
+  border: none;
+  border-radius: 30px;
+  margin: 0;
+  padding: 0.5rem;
+  text-decoration: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.col-4 button {
+  cursor: pointer;
+  text-align: center;
+}
+
+.col-4 input:focus {
+  outline: none;
+}
+
+.social-media-icons img {
+  margin-right: 5%;
+}
+
+/* Attribution Section */
+.attribution {
+  display: none;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
