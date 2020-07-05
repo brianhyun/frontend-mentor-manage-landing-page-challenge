@@ -27,6 +27,10 @@ p {
   color: hsl(0, 0%, 98%);
 }
 
+.header-color {
+  color: hsl(233, 12%, 13%);
+}
+
 /* Navbar Section */
 #navbar {
   align-items: center;
@@ -131,9 +135,9 @@ p {
 }
 
 .competitive-advantage-left .header {
-  font-size: 2rem;
-  font-weight: 500;
-  line-height: 1;
+  font-size: 2.3rem;
+  font-weight: 700;
+  line-height: 1.5;
   margin-bottom: 5%;
 }
 
@@ -284,6 +288,7 @@ p {
 .col-4 button, .col-4 input {
   border: none;
   border-radius: 30px;
+  font-family: "Be Vietnam", sans-serif;
   margin: 0;
   padding: 0.5rem;
   text-decoration: none;
@@ -292,12 +297,28 @@ p {
 }
 
 .col-4 button {
+  background-color: hsl(12, 88%, 59%);
+  color: #fff;
   cursor: pointer;
+  font-weight: 500;
+  height: 100%;
   text-align: center;
+  width: 70px;
+}
+
+.col-4 input {
+  font-size: 15px;
+  margin-right: 5px;
+  padding: 13px 45px 13px 20px;
 }
 
 .col-4 input:focus {
   outline: none;
+}
+
+.col-4 p {
+  color: hsla(0, 0%, 100%, 0.5);
+  font-size: 15px;
 }
 
 .social-media-icons img {
