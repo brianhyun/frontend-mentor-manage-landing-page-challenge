@@ -1,3 +1,4 @@
+// Testimonial Carousel Animation
 $(".test.first").click(function() {
   $(".testimonials-container").animate({
     left: "450px"
