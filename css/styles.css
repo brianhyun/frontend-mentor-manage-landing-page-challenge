@@ -317,10 +317,6 @@ p {
   margin-bottom: 30%;
 }
 
-/* .col-1 .social-media-icons img:hover {
-  =color: #f25f3a;
-} */
-
 .col-1 .social-media-icons {
   width: 162px;
 }
@@ -381,8 +377,12 @@ p {
   font-size: 15px;
 }
 
-.social-media-icons img {
+.social-media-icons svg {
   margin-right: 5%;
+}
+
+.social-media-icons svg:hover path{
+  fill: #f25f3a;
 }
 
 /* Attribution Section */
